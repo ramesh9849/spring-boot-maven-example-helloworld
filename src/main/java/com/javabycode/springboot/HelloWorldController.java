@@ -10,7 +10,7 @@ public class HelloWorldController {
     @RequestMapping("/hello")
     public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
         
-        String message="You just create Spring Boot Example successfully ans welcome to the new life Ramesh";
+        String message="You just create Spring Boot Example successfully, Welcome to the Onboard";
         model.addAttribute("name", name);
         model.addAttribute("message", message);
         
