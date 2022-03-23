@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController {
-    @RequestMapping("/hello")
-    public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
+    @RequestMapping("/Welcome")
+    public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="to my site") String name) {
         
         String message="Successfully Launched  Spring Boot Project using CI & CD pipeline";
         model.addAttribute("name", name);
